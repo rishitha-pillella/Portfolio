@@ -1,0 +1,159 @@
+/* Sliding Portfolio Style */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b0c10;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #4e291d, #e34c0b);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #eae20b;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #dbf70a;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #1c1e21;
+}
+
+.section.dark {
+  background: #131517;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.about-img img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #e15509;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.about-img img:hover {
+  transform: scale(0.9);
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skills img {
+  width: 130px;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 0 8px #ee6e0b);
+}
+
+.skills img:hover {
+  transform: scale(1.2) ;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.project {
+  background: #2f2f2f;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  box-shadow: 5px 5px 20px rgba(231, 97, 8, 0.3);
+  font-weight: bold;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  background: #3a3a3a;
+}
+
+footer {
+  background: linear-gradient(to right, #4e291d, #e34c0b);
+  color: #140101;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skills,
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}

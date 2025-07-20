@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">RISHI'S<span>Portfolio</span></h1>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="about-container">
+      <div class="about-img">
+        <img src="bangaram.jpg" alt="about-img">
+      </div>
+      <div class="about-text">
+        <p>Hi! I'm Rishitha Pillella, a passionate and creative individual with a keen eye for design and a love for innovation. I specialize in building beautiful, responsive websites and intuitive user experiences. Whether it’s crafting clean HTML/CSS layouts or adding eye-catching animations, I aim to bring ideas to life on the web.</p>
+  </section>
+  
+
+  </section>
+
+  <section id="skills" class="section dark">
+    <h2>Skills</h2>
+    <div class="skills">
+      <img src="html.png" alt="HTML">
+      <img src="css.png" alt="CSS">
+      <img src="js.png" alt="JavaScript">
+      <img src="c.png" alt="c">
+      <img src="java.png" alt="java">
+      <img src="python.png" alt="python">
+      <img src="creativity.png" alt="creativity">
+      <img src="problemsolving.png" alt="problemsolving">
+
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">Marine Biology & Aquaculture</div>
+      <div class="project">Portfolio Website</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
+    <h2>Contacts</h2>
+    <p>Email:
+      <a href="mailto:rpillella@gmail.com">rpillella@gmail.com</a>
+    </p>
+    <p>Linkedin:
+      <a href="https://www.linkedin.com/public-profile/settings">https://www.linkedin.com/public-profile/settings</a>
+    </p>
+    <p>GitHub:
+      <a href="https://github.com/rishitha-pillella">https://github.com/rishitha-pillella</a>
+    </p>
+    <p>Contact: 91 7815969421</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rishitha | All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 4000);
+  </script>
+</body>
+</html>
